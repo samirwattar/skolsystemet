@@ -4,6 +4,8 @@
 
 struct Student
 {
-	std::string name = "";
+	std::string fname = "";
+	std::string lname = "";
+	std::string schoolClass = "";
 	int age = 0;
 };
