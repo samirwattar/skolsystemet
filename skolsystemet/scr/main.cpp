@@ -1,8 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <thread>
-#include <chrono>
+
 #include "SchoolSystem.h"
 
 bool LoggedIn()
@@ -29,10 +25,6 @@ bool LoggedIn()
 		return false;
 	}
 
-
-
-
-
 }
 
 using namespace std::this_thread; // sleep_for, sleep_until
@@ -48,7 +40,8 @@ int main()
 
 	int choice;
 
-	std::cout << "1. Register\n2: Login\n:";
+	std::cout << "1. Register\n2: Login\n";
+	std::cout << "Choose: ";
 	std::cin >> choice;
 	if (choice == 1)
 	{

@@ -2,8 +2,11 @@
 #include <vector>
 #include "Student.h"
 #include <iostream>
+#include <sstream>
 #include <fstream>
-
+#include <string>
+#include <thread>
+#include <chrono>
 
 class SchoolSystem
 {
@@ -13,10 +16,11 @@ public:
 
 	void AddStudent();
 	void AddClass();
-	void RemoveStudent();
-	void AddStudentToClass();
+	void SystemInfo();
 
 
 	std::vector<Student> students;
 	std::vector<std::string> schoolClasses;
+
+
 };
